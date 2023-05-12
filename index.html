@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>Sınav</title>
+</head>
+<body>
+  <div class="wrapper">
+      <div class="timer-score-container">
+        <div class="timer">
+          <h4 id="timer">05:00</h4>
+        </div>
+        <hr>
+        <div id="result">
+          <h2>Sonuç: <span id="score"></span>/100</h2>
+          <div id="correct-incorrect"></div>
+          <div class="restart">
+            <button id="restart">Yeniden Başla</button>
+          </div>
+        </div>
+    </div>
+
+    <div id="quiz-container">
+      <div id="questionNo">
+        <h4>Soru 1</h4>
+      </div>
+      <p id="question"></p>
+      <div id="options-container">
+        <label for="option1">
+          <input type="radio" id="option1" name="option" value="Burası 1.Seçenek"/>
+        </label>
+        <label for="option2">
+          <input type="radio" id="option2" name="option" value="1"/>
+        </label>
+        <label for="option3">
+          <input type="radio" id="option3" name="option" value="2"/>
+        </label>
+      </div>
+      <div class="buttons">
+        <button id="previous"><i class="fa-solid fa-arrow-left fa-2xl"></i></button>
+        <button id="next"><i class="fa-solid fa-arrow-right fa-2xl"></i></button>
+        <button id="add-question"><i class="fa-solid fa-plus"></i>  Soru Ekle</button>
+        <button id="edit-question"><i class="fa-solid fa-pen-to-square"></i>  Soruyu Düzenle</button>
+      </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --dark-color: #2A384C;
+    --light-color: #A0B2C2;
+    --second-light-color:#D1D9DF;
+    --third-light-color: #fafafa;
+    --choose-color: #FF5E2C;
+}
+.wrapper{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: var(--light-color);
+    background-color: var(--third-light-color);
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.questions button{
+    border-radius: 5px;
+    color: var(--dark-color);
+    border-style: solid;
+    border-color: var(--dark-color);
+    cursor: pointer;
+}
+.questions button:hover{
+    background-color: var(--choose-color);
+}
+.wrapper hr{
+    border: 1px solid;
+    border-color: var(--light-color);
+}
+#quiz-container{
+    display: flex;
+    flex-direction: column;
+}
+#quiz-container h4{
+    color: var(--dark-color);
+    margin-left: 20px;
+}
+#quiz-container p{
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+#options-container{
+    width: 500px;
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--light-color);
+    flex-direction: column;
+    margin: auto; /* bu satır option-container divini ortalamak için kullanılır */
+}
+
+#options-container label input{
+    margin: 20px;
+}
+
+#options-container label:not(:last-of-type) {
+    border-bottom: 1px solid var(--light-color);
+}
+
+#quiz-container .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+#previous, #next{
+     border: none;
+     color: var(--dark-color);
+     background-color: var(--third-light-color);
+     width: 60px;
+     height: 60px;
+}
+#quiz-container .buttons button:hover{
+    color: var(--choose-color);
+    cursor: pointer;
+}
+
+#add-question{
+    border-radius: 5px;
+    border-color: var(--dark-color);
+    background-color: var(--second-light-color);
+    height: 30px;
+}
+
+#edit-question{
+    border-radius: 5px;
+    border-color: var(--dark-color);
+    background-color: var(--second-light-color);
+    height: 30px;
+}
+.restart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#restart{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: var(--dark-color);
+    background-color: var(--second-light-color);
+    height: 30px;
+}
+#restart button:hover{
+    color: var(--choose-color);
+    cursor: pointer;
+}
+#correct-incorrect {
+    text-align: center;
+}
+
+#result{
+    display: none;
+}
