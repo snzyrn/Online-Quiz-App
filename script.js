@@ -130,13 +130,15 @@ function showResult() {
 
         const hrElement = document.createElement("hr");
         correctIncorrect.appendChild(hrElement);
+        if (userAnswers[index] === questionData.correctAnswer) {
+            score += 10;
+        }
     });
 
     document.getElementById("quiz-container").style.display = "none";
     result.style.display = "block";
     scoreElement.textContent = score;
 }
-
 restartButton.addEventListener("click", () => {
     document.getElementById("quiz-container").style.display = "block";
     result.style.display = "none";
